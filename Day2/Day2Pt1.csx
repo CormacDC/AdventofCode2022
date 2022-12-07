@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-using System.Linq;
 using Internal;
 
 static int GetWinnerScore(char opponentMove, char yourMove){
