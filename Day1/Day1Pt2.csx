@@ -46,4 +46,4 @@ static int ThreeFattestElves()
   return firstFattest + secondFattest + thirdFattest;
 }
 
-Console.WriteLine(ThreeFattestElves().ToString());
+Internal.Console.WriteLine(ThreeFattestElves().ToString());

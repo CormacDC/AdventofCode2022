@@ -33,4 +33,4 @@ static int FattestElf()
   return fattest;
 }
 
-Console.WriteLine(FattestElf().ToString());
+Internal.Console.WriteLine(FattestElf().ToString());
