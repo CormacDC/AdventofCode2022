@@ -1,11 +1,10 @@
 using System;
 using System.IO;
 using System.Text;
-using Internal;
 
 static int FattestElf()
 {
-  var input = File.ReadAllText("Day1/Day1Pt1.txt");
+  var input = File.ReadAllText("Day1/Day1.txt");
   var inputArray = input.Split(
     new string[] { "\r\n", "\r", "\n" },
     StringSplitOptions.None
@@ -33,4 +32,4 @@ static int FattestElf()
   return fattest;
 }
 
-Internal.Console.WriteLine(FattestElf().ToString());
+Console.WriteLine(FattestElf().ToString());
