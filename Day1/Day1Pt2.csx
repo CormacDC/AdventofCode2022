@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-using Internal;
 
 static int ThreeFattestElves()
 {
@@ -46,4 +45,4 @@ static int ThreeFattestElves()
   return firstFattest + secondFattest + thirdFattest;
 }
 
-Internal.Console.WriteLine(ThreeFattestElves().ToString());
+Console.WriteLine(ThreeFattestElves().ToString());

@@ -2,7 +2,6 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-using Internal;
 
 static int GetPriorityForSack(String sack)
 {
@@ -34,4 +33,4 @@ static int CalculatePrioritySum()
   return totalPriority;
 }
 
-Internal.Console.WriteLine(CalculatePrioritySum().ToString());
+Console.WriteLine(CalculatePrioritySum().ToString());

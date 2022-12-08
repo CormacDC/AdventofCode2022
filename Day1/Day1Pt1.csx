@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-using Internal;
 
 static int FattestElf()
 {
@@ -33,4 +32,4 @@ static int FattestElf()
   return fattest;
 }
 
-Internal.Console.WriteLine(FattestElf().ToString());
+Console.WriteLine(FattestElf().ToString());

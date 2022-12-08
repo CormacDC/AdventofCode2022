@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Text;
-using Internal;
 
 static int GetWinnerScore(char opponentMove, char yourMove){
   switch (opponentMove)
@@ -75,4 +74,4 @@ static int CalculateStrategyScore()
   return totalScore;
 }
 
-Internal.Console.WriteLine(CalculateStrategyScore().ToString());
+Console.WriteLine(CalculateStrategyScore().ToString());
