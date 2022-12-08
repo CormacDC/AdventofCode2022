@@ -19,7 +19,6 @@ static int GetOverlappingRanges()
     var firstRange = splitLine[0].Split('-').Select(x => Int32.Parse(x));
     var secondRange = splitLine[1].Split('-').Select(x => Int32.Parse(x));
 
-    // bool overlap = a.start < b.end && b.start < a.end;
     if (firstRange.ElementAt(0) <= secondRange.ElementAt(1)
         && secondRange.ElementAt(0) <= firstRange.ElementAt(1))
     {
