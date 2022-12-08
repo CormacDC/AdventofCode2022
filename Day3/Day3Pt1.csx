@@ -12,8 +12,8 @@ static int GetPriorityForSack(String sack)
   var mismatchedLetter = String.Concat(firstHalf.Where(x => secondHalf.Contains(x)))[0];
 
   return char.IsUpper(mismatchedLetter)
-          ? (int)mismatchedLetter - 38 
-          : (int)mismatchedLetter - 96;
+          ? (int)mismatchedLetter - 38 // ascii value of A is 65 & we want 27 thru 52
+          : (int)mismatchedLetter - 96; // ascii value of a is 97 & we want 1 thru 26
 }
 
 static int CalculatePrioritySum()
