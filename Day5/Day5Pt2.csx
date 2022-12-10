@@ -36,11 +36,11 @@ static Dictionary<int,Stack<char>> shuffleCrates(Dictionary<int,Stack<char>> cra
 
   foreach (var instruction in instructions)
   {
-    var instructionNumbers = Regex.Split(instruction, @"\D+");
+    var instructionNumbers = Regex.Split(instruction, @"\D+").Select(x => Int32.Parse(x));
 
-    var move = Int32.Parse(instructionNumbers[1]);
-    var from = Int32.Parse(instructionNumbers[2]);
-    var to = Int32.Parse(instructionNumbers[3]);
+    var move = instructionNumbers.ElementAt(1);
+    var from = instructionNumbers.ElementAt(2);
+    var to = instructionNumbers.ElementAt(3);
 
     var tempStack = new Stack<char>();
 
