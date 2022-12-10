@@ -64,7 +64,7 @@ static String getTopCrateMessage(Dictionary<int,Stack<char>> crateStacks, int nu
   return message;
 }
 
-static String GetCrateMessage()
+static String GetCrateMessage(int numStacks)
 {
   var input = File.ReadAllText("Day5/Day5.txt");
   var inputArray = input.Split(
@@ -80,8 +80,6 @@ static String GetCrateMessage()
     new String[] { "\r\n", "\r", "\n" },
     StringSplitOptions.None
   );
-
-  var numStacks = 9;
   
   var crateStacks = getCrateStacks(crateArray, numStacks);
 
@@ -92,4 +90,4 @@ static String GetCrateMessage()
   return message;
 }
 
-Console.WriteLine(GetCrateMessage());
+Console.WriteLine(GetCrateMessage(9));
